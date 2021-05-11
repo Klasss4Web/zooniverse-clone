@@ -1,6 +1,7 @@
 import React from 'react';
 import * as ReactBootstrap from 'react-bootstrap';
 import SignIn from './signIn'
+// import RegisterForm from './registerForm'; 
 
 
 const NavBar = () => {

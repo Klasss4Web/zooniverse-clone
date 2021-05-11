@@ -6,7 +6,7 @@ import { Button, Modal, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
-const SignIn = ({style}) => {
+const RegisterForm = ({style}) => {
 
   const inputStyle = {
     width: "350px",
@@ -27,7 +27,7 @@ const SignIn = ({style}) => {
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
-        style={{width: '400px', transform: 'translateX(120%)'}}
+        
       >
         <Modal.Header closeButton>
           {/* <Modal.Title><Link to="/sign-in">Sign In</Link></Modal.Title> */}
@@ -57,4 +57,4 @@ const SignIn = ({style}) => {
 }
 
 
-export default SignIn;
+export default RegisterForm;

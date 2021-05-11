@@ -25,7 +25,7 @@ const HomePage = () =>
   return (
     <>
       <Card className="bg-dark text-white">
-         <video src={myVideo} className="card-video" />      
+        <video src={myVideo} className="card-video" style={{width: '100%'}} />      
         <Card.ImgOverlay className="card-contents">
           <Card.Title className="card-title_banner">WELCOME TO THE ZOONIVERSE</Card.Title>
           <Card.Text className="card-text_banner">
@@ -34,6 +34,8 @@ const HomePage = () =>
           <Link className="link-btn outline-links" to="/projects">See All Projects</Link>
         </Card.ImgOverlay>
       </Card>
+      
+      
       <Container className="pt-4 pb-5">
         <h2 className="h4 py-4 main-font-color">FEATURED PROJECTS</h2>
         <FeaturedProjects />
