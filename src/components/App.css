@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+
+.App {
+  text-align: center;
+  color: #5b5b5b;
+  font-family: 'Oswald', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.center {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.main-navBar {
+  background:#000000;
+  
+}
+
+.nav-font {
+  font-size: 12px;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.nav-font:hover {
+  border-bottom: 1px solid aqua;
+}
+
+.nav-font-dropdown {
+  color: #ffffff;
+  background: #00979d;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.main-font-color {
+  color: #00979d;
+}
+
+.card-video {
+  height:500px;
+}
+
+.card-video video {
+  max-height: 500px;
+}
+
+.card-title_banner {
+  font-size: 28px;
+  color: #b8e1e4;
+}
+
+.card-text_banner {
+  font-size: 60px;
+}
+
+.btn {
+  padding: 8px 30px;
+  border-radius: 0;
+  color: #fff;
+}
+
+.card-contents {
+  width: 100%;
+  transform: translateY(20%);
+}
+
+.cards {
+  height: 270px;
+}
+
+.cards_title {
+  height: 50px;
+  background: #fff;
+}
+
+
+.card_text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  font-size: 16px;
+  background: #fff;
+  transition: opacity 1s, transform 1s 1s linear, height 2s;  
+}
+
+.card_text:hover {
+  height: 200px;
+}
+
+.whats-this {
+  height: 550px;
+  width: 100%;
+  background: #eef2f5;
+  text-align: left;
+}
+
+.buttons-signUp-register button, .btn-labs {
+  padding: 8px 55px;
+  font-size: 16px; 
+}
+
+.collection-cards {
+  width:100px;
+}
+
+.link-btn {
+  padding: 8px 40px;
+  font-size: 16px;
+  background: inherit;
+  color: #ffffff;
+  border: 2px solid #f0b200;
+}
+
+.outline-links:hover {
+  background: #f0b200;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.buttons-signUp {
+  color: #000000;
+  text-align: left;
+}
+
+.play-store, .app-store {
+  width: 120px;
+}
+
+/*****************Zooniverse Works**************/
+.compact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.zooniverse-works-figure {
+  font-size: 120px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.classification {
+  color: #b8e1e4;
+}
+
+.researchers-card {
+  width: 33.33%;
+  border: none;
+  display: inline;
+  
+}
+
+.researchers-photos {
+  width: 33.33%;
+  height: 350px;
+  margin-bottom: 50px;
+}
+
+.community-section {
+  width: 100%;
+  background: #f2f2f2f2;
+  margin-top: 20px;
+}
+
+.community-section_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.btn-view-project {
+  color: #000000;
+}
+
+.article-list-linkstyle {
+  text-decoration: none;
+  color: black;
+  
+}
+
+.click-link {
+  font-style: italic;
+  /* color: #01970d; */
+  color: #00979d;
+}
+
+.vertical-line {
+  border-right: 2px solid grey;
+  height: 100%;
+}
+
+.fab {
+  font-size: 20px;
+  margin-left: 20px;
+  color: #00979d;
+}
+
+.social-media-icon_line {
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  width: 100px;
+  margin-left: 20px;
+  background: #00979d;
+}
+
+.footer-container {
+  background: #353535;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.foot-logo {
+  width: 300px;
+  transform: translateY(50%);
+}
+
+.bottom-footer {
+  width: 100%;
+  height: 50px;
+  background: #1f1f1f;
+  color: grey;
+  text-align: center;
+  padding: 15px;
+}
+
+.bottom-footer small {
+  padding-left: 10px;
+}
+
+.banner {
+  background: #00979d;
+  color: #ffffff;
+}
+
+.banner-links {
+  color: #ffffff;
+  padding-left: 30px; 
+}
+
+.banner-links:hover {
+  border-bottom: 3px solid #ffffff;
+  /* text-decoration: none; */
+}
+
+.projects-page_body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #edf0f4;
+}
+
+.projects_welcome {
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 200px;
+  padding-right: 200px;
+  background: #ffffff;
+}
+
+.project-desc {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.card-collections {
+  width: 100px;
+  border: none;
+}
+
+.signIn-nav {
+  color: #ffffff;
+}
+
+/******************Build A Project*******************/
+
+.hero-img {
+  width: 100%;
+  height: 720px;
+  background-image: url("../images/builder-landing.jpg");
+  color: #ffffff;
+}
+
+.hero-logo {
+  background: transparent;
+  opacity: 0.2;
+  width: 300px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.lab-desc {
+  width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.back-to-projects {
+  padding: 20px 75px;
+  background: #00979d;
+  color: #ffffff;
+  margin-left: -50px;
+}
+
+.hero-btn {
+  color: #ffffff;
+}
+
+.content-container {
+  width: 70%;
+  padding-left: 60px;
+}
+
+small {
+  color: #ffffff;
+}
+
+.btn-outline {
+  color: #000000;
+  border: 2px solid #000;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
