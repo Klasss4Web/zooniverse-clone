@@ -12,7 +12,6 @@ const Banner = ({style,title, active, paused, finished}) =>
         <Link className="banner-links" to="#">{active}</Link>
         <Link className="banner-links" to="/active">{paused}</Link>
         <Link className="banner-links" to="/active">{finished}</Link>
-        {/* <Link className="banner-links" to="/active">{finished}</Link> */}
       </div>
     </Container>
   </Jumbotron>

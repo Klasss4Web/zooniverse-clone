@@ -1,19 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card, Row, Col, Button }  from 'react-bootstrap';
+// import { Card, Row, Col, Button }  from 'react-bootstrap';
 
 import SignIn from '../components/signIn';
 
 import logoZooniverse from  '../images/foot-zoon.png';
 
 const BuildAProject = () => {
-const style = {
-  color: "red"
-}
 
   return(
     <div className="hero-img">
-      <img src={logoZooniverse} className="hero-logo" />
+      <img src={logoZooniverse} className="hero-logo" alt="zoon-logo" />
       <h2>Zooniverse Project Builder</h2>
       <p className="lab-desc">Anyone can build a Zooniverse project. Just upload your data and choose the tasks you want the volunteers to do. To find out more, read our <Link to="#">How to Build a Project documentation</Link>, or click the button below to get started.</p>
       <div className="row">

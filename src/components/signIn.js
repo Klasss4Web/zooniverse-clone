@@ -46,7 +46,7 @@ const SignIn = ({style}) => {
            <input style={inputStyle} type="text" name="username" id="username" /><br/><br/>
             <label for="password">Password</label><br/>
            <input style={inputStyle} type="text" name="password" id="password" /><br/><br/>
-           <a className="py-5" href="#">Forgot your Password?</a><br/><br/>
+           <a className="py-5" href="#forgot-password">Forgot your Password?</a><br/><br/>
           <Button style={{width: '350px'}} variant="primary" className="btn">Submit</Button>
           </form>
         </Modal.Body>

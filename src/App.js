@@ -1,10 +1,9 @@
 // import logo from '/logo';
-import React, { Component } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Switch } from 'react-router-dom';
-  import * as ReactBootstrap from 'react-bootstrap'
 
 import HomePage from './pages/HomePage';
 import Projects from './pages/Projects'
@@ -13,7 +12,6 @@ import BuildAProject from './pages/BuildAProject';
 import AboutPage from './pages/AboutPage';
 import PageNotFound from './pages/PageNotFound';
 import GetInvolvedPage from './pages/GetInvolvedPage';
-// import ArticleListPage from './pages/ArticleListPage';
 import RegistrationForm from './components/form';
 
 import NavBar from './components/NavBar';

@@ -52,7 +52,7 @@ const RegisterForm = ({styleReg}) => {
            <input style={inputStyle} type="text" name="c-password" id="c-password" /><br/><br/>
            <label for="email" style={{marginLeft: "10px"}}>Email</label><br/>
            <input style={inputStyle} type="text" name="email" id="email" /><br/><br/>
-           <input type="checkbox" name="policy-check" /><small style={{color: "black"}}>You agree to our <a className="py-5" href="#">privacy polic</a></small><br/><br/>
+           <input type="checkbox" name="policy-check" /><small style={{color: "black"}}>You agree to our <a className="py-5" href="#policy">privacy polic</a></small><br/><br/>
           <Button style={{width: '750px'}} variant="primary" className="btn">Register</Button>
           </form>
         </Modal.Body>

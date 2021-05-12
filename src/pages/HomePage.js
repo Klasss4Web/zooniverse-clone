@@ -3,7 +3,6 @@ import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-// import CardGroup from 'react-bootstrap/CardGroup'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom';
 
@@ -117,7 +116,6 @@ const HomePage = () =>
                       Help us implement an automated biodiversity monitoring system in the... 
                     </Card.Text>
                     <Link className="link-btn" to="/projects" style={{color: "black"}}>View All Projects</Link>
-                    {/* <Button variant="outline-warning" className="btn-lg btn btn-view-project">View Projects</Button>{' '} */}
                   </Card.Body>
                 </Card>
                 <hr className="my-5" />
