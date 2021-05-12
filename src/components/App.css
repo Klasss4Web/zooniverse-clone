@@ -35,16 +35,18 @@
 .main-navBar {
   background:#000000;
   z-index: 10;
+  height: 50px;
 }
 
 .nav-font {
-  font-size: 12px;
-  color: #ffffff;
+  font-size: 10px;
+  color: lightgray;
   margin-left: 20px;
 }
 
 .nav-font:hover {
   border-bottom: 1px solid aqua;
+  text-decoration: none;
 }
 
 .nav-font-dropdown {
