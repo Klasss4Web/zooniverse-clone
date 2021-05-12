@@ -9,10 +9,11 @@ const NavBar = () => {
   return (
     <>
       <ReactBootstrap.Navbar collapseOnSelect expand="lg" variant="dark" className="main-navBar">
-        <ReactBootstrap.Navbar.Brand className="nav-font" href="/">HOME</ReactBootstrap.Navbar.Brand>
+        {/* <ReactBootstrap.Navbar.Brand className="nav-font" href="/">HOME</ReactBootstrap.Navbar.Brand> */}
         <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">
           <ReactBootstrap.Nav className="mr-auto">
+          <Link className="nav-font my-auto" to="/">HOME</Link>
             <Link className="nav-font my-auto" to="/projects">PROJECTS</Link>
             <Link to="/about" className="nav-font my-auto">ABOUT</Link>
             <Link to="/get-involved" className="nav-font my-auto" >GET INVOLVED</Link>
