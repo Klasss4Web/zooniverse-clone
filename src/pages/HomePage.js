@@ -105,7 +105,7 @@ const HomePage = () =>
         </div>
         <div className="community-section_container align-left">
             <Row>
-              <Col xs={12} md={3} className="vertical-line">
+              <Col xs={12} md={3} className="vertical-line ml-0">
                 <h3 className="h2">News</h3>
                 <Card style={{ width: '18rem' }}>
                   <Card.Img variant="top" src={imgIberian} />
