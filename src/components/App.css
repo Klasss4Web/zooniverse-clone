@@ -34,7 +34,7 @@
 
 .main-navBar {
   background:#000000;
-  
+  z-index: 10;
 }
 
 .nav-font {
@@ -60,10 +60,9 @@
   color: #00979d;
 }
 
-/*  */
-
 .card-video {
-  height:500px;
+  /* height:500px; */
+  margin-top: -200px;
 }
 
 .card-video video {
@@ -125,6 +124,10 @@
 .buttons-signUp-register button, .btn-labs {
   padding: 8px 55px;
   font-size: 16px; 
+}
+
+.btn-labs {
+  background: #f0b200;
 }
 
 .collection-cards {
@@ -359,5 +362,11 @@ small {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media(min-width: 567px) {
+  .registration .modal-content{
+    width: 800px;
   }
 }

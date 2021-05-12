@@ -21,7 +21,7 @@ const SignIn = ({style}) => {
   return (
     <>
       <Button style={style} variant="outline-warning" className="btn-lg btn buttons-signUp mr-2" onClick={handleShow}>
-        Sign In</Button>{' '}
+        SIGN IN</Button>{' '}
       <Modal
         show={show}
         onHide={handleClose}
@@ -37,8 +37,7 @@ const SignIn = ({style}) => {
             </Col>
             <Col sm={6}>
               <Link style={{marginLeft: "150px"}} to="/register">Register</Link>
-            </Col>
-            
+            </Col>            
           </Row>
         </Modal.Header>
         <Modal.Body>

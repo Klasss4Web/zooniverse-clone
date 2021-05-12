@@ -11,6 +11,7 @@ import ArticleListPage from './ArticleListPage';
 import FeaturedProjects from '../components/featuredProjects';
 import DailyZooniverse from '../components/daily-zooniverse-HomePage';
 import SignIn from '../components/signIn';
+import RegisterForm from '../components/registerForm';
 
 import computer from '../images/home-computer.png';
 import imgAppStore from '../images/home-appStore.png';
@@ -21,11 +22,13 @@ import imgIberian from '../images/imgIberian.jpeg';
 
 const HomePage = () => 
 {
-  const myVideo = 'https://www.zooniverse.org/assets/home-video.ogv'
+  
+  const myVideo = 'https://www.zooniverse.org/assets/home-video.ogv';
+  
   return (
     <>
-      <Card className="bg-dark text-white">
-        <video src={myVideo} className="card-video" style={{width: '100%'}} />      
+      <Card className="bg-dark text-white hero-video">
+        <video src={myVideo} className="card-video" style={{width: '100%'}} autoPlay= "1" loop = "1" />      
         <Card.ImgOverlay className="card-contents">
           <Card.Title className="card-title_banner">WELCOME TO THE ZOONIVERSE</Card.Title>
           <Card.Text className="card-text_banner">
@@ -33,9 +36,7 @@ const HomePage = () =>
           </Card.Text>
           <Link className="link-btn outline-links" to="/projects">See All Projects</Link>
         </Card.ImgOverlay>
-      </Card>
-      
-      
+      </Card> 
       <Container className="pt-4 pb-5">
         <h2 className="h4 py-4 main-font-color">FEATURED PROJECTS</h2>
         <FeaturedProjects />
@@ -49,8 +50,7 @@ const HomePage = () =>
               <p className="h6">The Zooniverse enables everyone to take part in real cutting edge research in many fields across the sciences, humanities, and more. The Zooniverse creates opportunities for you to unlock answers and contribute to real discoveries.</p>
               <div className="buttons-signUp-register pt-4">
                 <SignIn />
-                {/* <Button variant="outline-warning" className="btn-lg btn buttons-signUp mr-2">Sign In</Button>{' '} */}
-                <Button variant="warning" className="btn-lg btn buttons-register">Register</Button>{' '}
+                <RegisterForm styleReg={{color: "white", background: "orange", padding: "12px 60px", marginLeft: "-5px"}} />
               </div>
               <p className="h6 pt-5">DO SCIENCE ANYWHER</p>
               <p className="h6 pt-1">Bring the Zooniverse with you. Download the app for iOS and Android devices.</p>
@@ -74,9 +74,8 @@ const HomePage = () =>
             <p className="h6"><strong>A vibrant community.</strong>  Zooniverse gives people of all ages and backgrounds the chance to participate in real research with over 50 active online citizen science projects. Work with 1.6 million registered users around the world to contribute to research projects led by hundreds of researchers.</p>
             <small>SIGN IN OR REGISTER TO GET STARTED</small>
             <div className="buttons-signUp-register pt-4">
-              {/* <Button variant="outline-warning" className="btn-lg btn buttons-signUp mr-2">Sign In</Button>{' '} */}
               <SignIn />
-              <Button variant="warning" className="btn-lg btn buttons-register">Register</Button>{' '}
+              <RegisterForm styleReg={{color: "white", background: "orange", padding: "12px 60px", marginLeft: "-5px"}} />
             </div>
           </div>
         </Container>
@@ -91,7 +90,7 @@ const HomePage = () =>
           <h4>REAL RESEARCHERS, REAL RESULTS</h4>
           <p className="h2">Meet the researchers who've created projects for free on the Zooniverse</p>
           <p><strong>Meet the researchers who’ve created projects for free on the Zooniverse</strong> From classifying animals in the Serengeti to discovering new exoplanets using the Kepler space telescope, researchers of all backgrounds have used the free project builder to create engaging, accessible citizen science projects. Our researchers have used the data from their projects to publish over 100 peer-reviewed publications that encourage many fascinating discoveries. Researchers take part in project creation, data analysis, and even communicate directly with volunteers through Zooniverse Talk.</p>
-          <Button variant="warning" className="btn-lg btn buttons-register btn-labs mb-5">Zoniverse Labs</Button>{' '}
+          <Link className="btn-lg btn btn-labs mb-5" to="/lab">Zoniverse Labs</Link>
         </div>
       </section>
       <section className="community-section py-5">
@@ -117,7 +116,8 @@ const HomePage = () =>
                     <Card.Text>
                       Help us implement an automated biodiversity monitoring system in the... 
                     </Card.Text>
-                    <Button variant="outline-warning" className="btn-lg btn btn-view-project">View Projects</Button>{' '}
+                    <Link className="link-btn" to="/projects" style={{color: "black"}}>View All Projects</Link>
+                    {/* <Button variant="outline-warning" className="btn-lg btn btn-view-project">View Projects</Button>{' '} */}
                   </Card.Body>
                 </Card>
                 <hr className="my-5" />

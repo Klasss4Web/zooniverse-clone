@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { Button, Modal, Row, Col } from 'react-bootstrap';
-// import Modal from 'react-bootstrap/Modal'
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 
+import { Button, Modal, Row, Col } from 'react-bootstrap';
 
-const RegisterForm = ({style}) => {
+
+
+const RegisterForm = ({styleReg}) => {
 
   const inputStyle = {
-    width: "350px",
-    height: "50px"
+    width: "750px",
+    height: "50px",
+    padding: "10px",
+    marginLeft: "10px"
 }
 
   const [show, setShow] = useState(false);
@@ -20,14 +21,14 @@ const RegisterForm = ({style}) => {
 
   return (
     <>
-      <Button style={style} variant="outline-warning" className="btn-lg btn buttons-signUp mr-2" onClick={handleShow}>
-        Sign In</Button>{' '}
+      <Link style={styleReg} className="nav-font mr-5 my-3" onClick={handleShow}>
+        REGISTER</Link>{' '}
       <Modal
         show={show}
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
-        
+        className="registration"
       >
         <Modal.Header closeButton>
           {/* <Modal.Title><Link to="/sign-in">Sign In</Link></Modal.Title> */}
@@ -36,19 +37,23 @@ const RegisterForm = ({style}) => {
               <Link to="/sign-in">Sign In</Link>
             </Col>
             <Col sm={6}>
-              <Link style={{marginLeft: "150px"}} to="/register">Register</Link>
+              <Link style={{marginLeft: "380px"}} to="/register">Register</Link>
             </Col>
             
           </Row>
         </Modal.Header>
         <Modal.Body>
          <form>
-           <label for="username">Username or Email aAddress</label><br/>
+           <label for="username" style={{marginLeft: "10px"}}>Username or Email aAddress</label><br/>
            <input style={inputStyle} type="text" name="username" id="username" /><br/><br/>
-            <label for="password">Password</label><br/>
+            <label for="password" style={{marginLeft: "10px"}}>Password</label><br/>
            <input style={inputStyle} type="text" name="password" id="password" /><br/><br/>
-           <a className="py-5" href="#">Forgot your Password?</a><br/><br/>
-          <Button style={{width: '350px'}} variant="primary" className="btn">Submit</Button>
+           <label for="c-password" style={{marginLeft: "10px"}}>Confirm Password</label><br/>
+           <input style={inputStyle} type="text" name="c-password" id="c-password" /><br/><br/>
+           <label for="email" style={{marginLeft: "10px"}}>Email</label><br/>
+           <input style={inputStyle} type="text" name="email" id="email" /><br/><br/>
+           <input type="checkbox" name="policy-check" /><small style={{color: "black"}}>You agree to our <a className="py-5" href="#">privacy polic</a></small><br/><br/>
+          <Button style={{width: '750px'}} variant="primary" className="btn">Register</Button>
           </form>
         </Modal.Body>
       </Modal>

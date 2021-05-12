@@ -1,7 +1,7 @@
 import React from 'react';
 import * as ReactBootstrap from 'react-bootstrap';
 import SignIn from './signIn'
-// import RegisterForm from './registerForm'; 
+import RegisterForm from './registerForm'; 
 
 
 const NavBar = () => {
@@ -23,11 +23,12 @@ const NavBar = () => {
             </ReactBootstrap.NavDropdown>
           </ReactBootstrap.Nav>
           <ReactBootstrap.Nav>
-            <SignIn style={{color: "white", border: "none", fontSize: "16px", fontFamily: "Roboto"}} />
+            <SignIn style={{color: "white", border: "none", fontSize: "12px", fontFamily: "Roboto"}} />
             {/* <ReactBootstrap.Nav.Link className="nav-font" href="/sign-in">SIGN IN</ReactBootstrap.Nav.Link> */}
-            <ReactBootstrap.Nav.Link className="nav-font" eventKey={2} href="#memes">
+            {/* <ReactBootstrap.Nav.Link className="nav-font" eventKey={2} href="#memes">
               REGISTER
-            </ReactBootstrap.Nav.Link>
+            </ReactBootstrap.Nav.Link> */}
+            <RegisterForm />
           </ReactBootstrap.Nav>
         </ReactBootstrap.Navbar.Collapse>
       </ReactBootstrap.Navbar>
